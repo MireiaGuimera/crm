@@ -1,39 +1,30 @@
 <template>
   <div>
-    <v-container grid-list-md text-xs-center>
-      <v-layout>
+    <v-container grid-list-md >
+      <v-layout text-xs-left>
         <v-flex xs12>
-          <v-card>
+          <v-card align-self-start>
             <v-card-title>
-              <h3>Listado de clientes</h3>
+              <h3>Información del cliente</h3>
             </v-card-title>
-            <v-card-text class="px-0">
+            <v-card-text class="px-10">
               <h4>Nombre fiscal</h4>
               <h1>{{ cliente.nombre }}</h1>
-              <h4>Razon social</h4>
-              <h1>asdf</h1>
-              <h4>Club Lubrimed</h4>
-              <h1>asdf</h1>
-              <p>Dirección</p>
+              <h4>Dirección</h4>
               <p>{{ cliente.DatosEmpresa.Poligono }}</p>
               <p>{{ cliente.DatosEmpresa.Calle }}</p>
               <p>{{ cliente.DatosEmpresa.Cp }} {{ cliente.DatosEmpresa.Ciudad }} {{ cliente.DatosEmpresa.Provincia }}</p>
               <hr>
               <h4>Contacto</h4>
-              <h4>Oficinas {{ cliente.DatosEmpresa.Telefono }}</h4>
-              <h4>Atención al cliente {{ cliente.DatosEmpresa.TelefomoAtencionCliente }}</h4>
-              <h4>Email {{ cliente.DatosEmpresa.Email }}</h4>
+              <p>Oficinas: {{ cliente.DatosEmpresa.Telefono }}</p>
+              <p>Atención al cliente: {{ cliente.DatosEmpresa.TelefomoAtencionCliente }}</p>
+              <p>Email: {{ cliente.DatosEmpresa.Email }}</p>
               <hr>
               <h4>Contacto</h4>
-              <h3>{{ cliente.DatosEmpresa.Contacto }}</h3>
-              <h4>Cargo</h4>
-              <h3>{{ cliente.DatosEmpresa.ContactoCargo }}</h3>
-              <hr>
-              <h3>Contacto</h3>
-              <h3>Teléfono {{ cliente.DatosEmpresa.ContactoTelefono }}</h3>
-              <h3>Email {{ cliente.DatosEmpresa.ContactoEmail }}</h3>
-              <hr>
-              <h1>asdf</h1>
+              <p>{{ cliente.DatosEmpresa.Contacto }}</p>
+              <p>Cargo: {{ cliente.DatosEmpresa.ContactoCargo }}</p>
+              <p>Teléfono: {{ cliente.DatosEmpresa.ContactoTelefono }}</p>
+              <p>Email: {{ cliente.DatosEmpresa.ContactoEmail }}</p>
             </v-card-text>
           </v-card>
         </v-flex>
