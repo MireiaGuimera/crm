@@ -3,13 +3,13 @@
     <v-container grid-list-md >
       <v-layout text-xs-left>
         <v-flex xs12>
-          <v-card align-self-start>
+          <v-card>
             <v-card-title>
               <h3>Información del cliente</h3>
             </v-card-title>
             <v-card-text class="px-10">
               <h4>Nombre fiscal</h4>
-              <h1>{{ cliente.nombre }}</h1>
+              <h1>{{ cliente.DatosEmpresa.NombreFiscal }}</h1>
               <h4>Dirección</h4>
               <p>{{ cliente.DatosEmpresa.Poligono }}</p>
               <p>{{ cliente.DatosEmpresa.Calle }}</p>
@@ -25,6 +25,11 @@
               <p>Cargo: {{ cliente.DatosEmpresa.ContactoCargo }}</p>
               <p>Teléfono: {{ cliente.DatosEmpresa.ContactoTelefono }}</p>
               <p>Email: {{ cliente.DatosEmpresa.ContactoEmail }}</p>
+              <hr>
+              <v-btn color="success">Solicitar pedido</v-btn>
+              <v-btn color="error">Anular pedido</v-btn>
+              <v-btn color="warning">Solicitar cambio</v-btn>
+              <v-btn color="info">Solicitar Información</v-btn>
             </v-card-text>
           </v-card>
         </v-flex>
