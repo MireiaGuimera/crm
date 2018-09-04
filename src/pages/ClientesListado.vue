@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="card">
     <v-container grid-list-md >
       <v-layout text-xs-left>
         <v-flex xs12>
@@ -62,4 +62,5 @@ export default {
 </script>
 
 <style lang="css">
+.card { width: 50% }
 </style>
