@@ -65,7 +65,7 @@
     </v-toolbar>
     <v-content>
       <v-container fluid fill-height class="grey lighten-4">
-        <v-layout justify-center align-center>
+        <v-layout row wrap>
           <router-view></router-view>
         </v-layout>
       </v-container>
